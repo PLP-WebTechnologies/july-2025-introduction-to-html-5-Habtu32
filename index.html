@@ -1,9 +1,55 @@
 <!DOCTYPE html>
-<html>
-    <header>
-
-    </header>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Accessibility & SEO Basics">
+        <meta name="keywords" content="Accessibility & SEO Basics">
+        <meta name="author" content="Habtamu Wendifraw">
+        <title>HTML5 Semantic Page | Accessibility & SEO Basics</title>
     <body>
-        
+        <header>
+            <h1>Welcome to the Accessibility & SEO Basics page</h1>
+            <p>A demonstration of semantic HTML, accessibility, and SEO principle.</p>
+        </header>
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#features">features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <!--Main content-->
+        <main>
+            <!--About section-->
+            <section id="about" aria-labelledby="about-heading">
+                <h2 id="about-heading">About This Page</h2>
+                      <p>This page is built entirely with semantic HTML5 elements. It is designed to be screen reader-friendly and optimized for search engines.</p>
+            </section>
+            <!--Features section-->
+            <section id="features" aria-labelledby="features-heading">
+                <h2 id="features-heading">Features</h2>
+                 <article>
+                    <h3>Semantic Structure</h3>
+                    <p>We use elements like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;section&gt;</code> to give meaning to the layout.</p>
+                </article>
+                 <article>
+                    <h3>Accessibility Support</h3>
+                    <p>Landmarks and attributes like <code>aria-label</code> help assistive technologies understand and navigate the content easily.</p>
+                </article>
+                 <article>
+                    <h3>SEO Basics</h3>
+                    <p>Proper headings, metadata, and readable content make this page easier to find and understand for search engines.</p>
+                </article>
+                <address>
+                    <p>For more information, contact:</p>
+                    <p>Email: <a href="mailto:habtuwendifraw@gmail.com">habtuwendifraw@gmail.com</a>"
+                </address>
+            </section>
+        </main> 
+        <!---Footer-->
+        <footer>
+            <p>&copy; 2023 Habtamu Wendifraw. All rights reserved.</p>
+        </footer>  
     </body>
 </html>
